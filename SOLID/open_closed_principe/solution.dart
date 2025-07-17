@@ -12,11 +12,3 @@ abstract class ArticleRepository {
   Future<void> delete(Article article);
   Future<void> deleteById(String articleId);
 }
-
-class ArticleRepositoryImpl {
-  final ArticleRepository repository;
-  const ArticleRepositoryImpl(this.repository);
-  void test() {
-    this.repository.delete(article);
-  }
-}
